@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar"
 import "./App.css"
 
 import Cover from './assets/image-web-3-desktop.jpg'
+import Retro from './assets/image-retro-pcs.jpg'
 
 function App() {
   return (
@@ -32,6 +33,13 @@ function App() {
           </div>
         </div>
         <div className="bottom">
+          <Card 
+            image={Retro}
+            position={"01"}
+            title={"Reviving Retro PCs"}
+            desc={"What happens when old PCs are give modern upgrades?"}
+          />
+          <Card />
           <Card />
         </div>
       </main>

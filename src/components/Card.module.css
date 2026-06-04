@@ -1,0 +1,32 @@
+.card {
+    display: flex;
+    gap: 10px;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+}
+
+.right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.position {
+    color: var(--Soft-red);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.title {
+    color: var(--Very-dark-blue);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.card:hover .title {
+    color: var(--Soft-red);
+}

@@ -1,7 +1,20 @@
+import styles from "./Card.module.css"
 
-export default function Card() {
+console.log(styles)
+
+export default function Card({image, position, title, desc}) {
     return (
-        <div>Card</div>
+        <a className={styles.card}>
+            <div className={styles.left}>
+                <img src={image} />
+            </div>
+            <div className={styles.right}>
+                <h3 className={styles.position}>{position}</h3>
+                <p className={styles.title}>{title}</p>
+                <p className="">{desc}</p>
+            </div>
+
+        </a>
     )
 }
 
