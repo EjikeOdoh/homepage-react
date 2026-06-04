@@ -5,17 +5,14 @@ main {
 }
 
 .top {
-     background-color: green;
      display: flex;
      gap: 20px;
 }
 
 .bottom {
-    background-color: yellow;
 }
 
 .left {
-    background-color: red;
     flex: 2;
     display: flex;
     flex-direction: column;
@@ -23,16 +20,17 @@ main {
 }
 
 .right {
-    background-color: blue;
+    background-color: var(--Very-dark-blue);
+    padding: 20px;
     flex: 1;
 }
 
 .cover-image {
-    background-color: aqua;
+
+    display: flex;
 }
 
 .cover-texts {
-    background-color: brown;
     display: flex;
 }
 

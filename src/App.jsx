@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar"
 
 import "./App.css"
 
+import Cover from './assets/image-web-3-desktop.jpg'
+
 function App() {
   return (
     <>
@@ -12,12 +14,12 @@ function App() {
         <div className="top">
           <div className="left">
             <div className="cover-image">
-              Hello
+              <img src={Cover} />
             </div>
             <div className="cover-texts">
-              <h1>Bright</h1>
+              <h1>The Bright Future of Web 3.0?</h1>
               <div>
-                <p>Hello</p>
+                <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfulling its promise?</p>
                 <button>Read more</button>
               </div>
             </div>
