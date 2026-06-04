@@ -2,6 +2,8 @@ import Article from "./components/Article"
 import Card from "./components/Card"
 import Navbar from "./components/Navbar"
 
+import "./App.css"
+
 function App() {
   return (
     <>
@@ -9,7 +11,9 @@ function App() {
       <main>
         <div className="top">
           <div className="left">
-            <div className="cover-image"></div>
+            <div className="cover-image">
+              Hello
+            </div>
             <div className="cover-texts">
               <h1>Bright</h1>
               <div>
