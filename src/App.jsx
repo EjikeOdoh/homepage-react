@@ -9,9 +9,29 @@ import Retro from './assets/image-retro-pcs.jpg'
 import Laptop from './assets/image-top-laptops.jpg'
 import Game from './assets/image-gaming-growth.jpg'
 
-
-//  Home New Popular Trending Categories 
-
+    
+const menuItems = [
+  {
+    name: "Home",
+    url: "#"
+  },
+  {
+    name: "New",
+    url: "#"
+  },
+  {
+    name: "Popular",
+    url: "#"
+  },
+  {
+    name: "Trending",
+    url: "#"
+  },
+  {
+    name: "Categories",
+    url: "#"
+  }
+]
 
 const cards = [
   {
@@ -73,7 +93,9 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar
+        menu={menuItems}
+      />
       <main>
         <div className="top">
           <div className="left">

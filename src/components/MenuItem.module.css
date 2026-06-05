@@ -1,0 +1,7 @@
+.menuItem {
+    color: var(--Dark-grayish-blue)
+}
+
+.menuItem:hover {
+    color: var(--Soft-orange);
+}

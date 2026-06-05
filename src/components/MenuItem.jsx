@@ -1,5 +1,7 @@
-export default function MenuItem() {
+import styles from './MenuItem.module.css'
+
+export default function MenuItem({name, url}) {
     return (
-        <div>MenuItem</div>
+        <a href={url} className={styles.menuItem}>{name}</a>
     )
 }

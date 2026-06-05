@@ -5,7 +5,15 @@ import Logo from '../assets/logo.svg'
 
 import styles from './Navbar.module.css'
 
-export default function Navbar() {
+export default function Navbar({ menu }) {
+    const menuItems = menu.map((i) => {
+        return (
+            <MenuItem
+                name={i.name}
+                url={i.url}
+            />
+        )
+    })
     return (
         <nav className={styles.navbar}>
             <div className={styles.logo}>
@@ -13,8 +21,7 @@ export default function Navbar() {
             </div>
 
             <div className={styles.menu}>
-                <MenuItem />
-                <MenuItem />
+              {menuItems}
             </div>
         </nav>
     )
