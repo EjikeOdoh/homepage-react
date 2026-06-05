@@ -49,7 +49,6 @@ const articles = [
   }
 ]
 
-
 function App() {
 
   const cardLinks = cards.map((card) => {
@@ -59,6 +58,15 @@ function App() {
         position={card.position}
         title={card.title}
         desc={card.desc}
+      />
+    )
+  })
+
+  const articleLinks = articles.map((article) => {
+    return (
+      <Article
+        title={article.title}
+        desc={article.desc}
       />
     )
   })
@@ -83,18 +91,7 @@ function App() {
           <div className="right">
             <h2>New</h2>
             <div className="articles">
-              <Article
-                title={"Jamila"}
-                desc={"Hello world"}
-              />
-              <Article
-                title={"Jamila"}
-                desc={"Hello world"}
-              />
-              <Article
-                title={"Jamila"}
-                desc={"Hello world"}
-              />
+              {articleLinks}
             </div>
           </div>
         </div>
