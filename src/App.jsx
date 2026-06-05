@@ -16,23 +16,35 @@ const cards = [
     image: Retro,
     position: "01",
     title: "Reviving Retro PCs",
-    desc:"What happens when old PCs are given modern upgrades? "
+    desc: "What happens when old PCs are given modern upgrades? "
   },
-    {
+  {
     image: Laptop,
     position: "02",
     title: "Top 10 Laptops of 2022",
-    desc:"Our best picks for various needs and budgets. "
+    desc: "Our best picks for various needs and budgets. "
   },
-    {
+  {
     image: Game,
     position: "03",
     title: "The Growth of Gaming",
-    desc:"How the pandemic has sparked fresh opportunities."
+    desc: "How the pandemic has sparked fresh opportunities."
   }
 ]
 
 function App() {
+
+  const cardLinks = cards.map((card) => {
+    return (
+      <Card
+        image={card.image}
+        position={card.position}
+        title={card.title}
+        desc={card.desc}
+      />
+    )
+  })
+
   return (
     <>
       <Navbar />
@@ -53,19 +65,23 @@ function App() {
           <div className="right">
             <h2>New</h2>
             <div className="articles">
-              <Article />
+              <Article 
+              title={"Jamila"}
+              desc={"Hello world"}
+              />
+               <Article 
+              title={"Jamila"}
+              desc={"Hello world"}
+              />
+               <Article 
+              title={"Jamila"}
+              desc={"Hello world"}
+              />
             </div>
           </div>
         </div>
         <div className="bottom">
-          <Card 
-            image={Retro}
-            position={"01"}
-            title={"Reviving Retro PCs"}
-            desc={"What happens when old PCs are give modern upgrades?"}
-          />
-          <Card />
-          <Card />
+          {cardLinks}
         </div>
       </main>
     </>
