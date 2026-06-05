@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+
+.logo {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
